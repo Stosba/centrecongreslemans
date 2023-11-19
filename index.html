@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brochure ODALYS CITY Centre Congrès</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .brochure {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #f6f3ee;
+            border: 2px solid #504848;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 10px;
+        }
+
+        .circular-image {
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto; /* Centre l'image horizontalement */
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .image-bas-droite {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .iconTitle {
+            display: flex;
+            flex-direction: row;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .icon {
+            font-size: 35px;
+            color: #534540;
+            text-align: center;
+            margin: auto;
+        }
+
+        .smicon {
+            color: #534540;
+            text-align: center;
+            margin-left: 5%;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .avd {
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+
+        .fa-solid:before {
+            border-radius: 50%;
+            color: #534540;
+            padding: 7px;
+            border: 2px solid;
+        }
+
+        p, li {
+            font-family: Verdana, Tahoma, sans-serif;
+            font-size: 15px;
+            color: #534540;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 35px;
+            text-align: center;
+            color: #504848;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 35px;
+            color: #514641;
+            margin: 5%;
+        }
+
+        h3 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: #514641;
+            vertical-align: middle;
+            margin: auto;
+        }
+
+        .txt-3column {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .fa-bell-concierge {
+            margin: 5%;
+        }
+
+        a {
+            text-decoration: none; /* Supprime le soulignage */
+            color: inherit; /* Utilise la couleur héritée du parent */
+        }
+
+        .col2p2 {
+            padding-top: 10%;
+        }
+
+        .iconTitle i, h3 {
+            flex: 1;
+        }
+
+        .avd i {
+            flex: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .page {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 20px;
+            }
+    
+            .col-1 { order: 2; }
+            .col-2 { order: 3; }
+            .col-3 { order: 1; }
+
+            p, li {
+                text-align: center;
+            }
+
+            .icon {
+                margin: 5%;
+            }
+
+            img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .avd {
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+            }
+
+            h1, h2 {
+                text-align: center;
+            }
+
+            .h3avd {
+                margin-bottom: 5%;
+            }
+
+            .col2p2 {
+            padding-top: 10px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+<div class="brochure">
+    <div class="page">
+        <div class="column col-1">
+            <h2>La Réception</h2>
+            <i class="fa-solid fa-bell-concierge icon"></i>
+            <p><b>La Réception est ouverte 24h/24</b> <br><i>The reception is open 24 hours a day</i></p>
+            <p><b>Arrivée à partir de 15h</b><br><i>Check in at 3.pm</i></p>
+            <p><b>Départ à 12h</b><br><i>Check out at 12 pm (midday)</i></p>
+            <p><b>Composer le 9 du téléphone de la chambre pour joindre la réception</b><br><i>Dial 9 from the room telephone to reach the reception</i></p>
+            <p><b>Après 23h30, les portes de l'hôtel sont fermées. Veuillez contacter le 02.43.23.30.66, un réceptionniste viendra vous ouvrir.</b><br><i>After 11:30 p.m. the hotel doors are closed. Please contact 02.43.23.30.66, a receptionist will come and open the door for you.</i></p>
+        </div>
+        <div class="column col-2">
+            <h2>Informations</h2>
+            <h3 class="h3avd"><u>A votre départ</u></h3>
+            <div class="iconTitle avd">
+                <i class="fa-solid fa-droplet icon"></i>
+                <p><b>Pour votre confort, n'hésitez pas à utiliser le lave-vaisselle en dessous de l'évier.</b> <br><i>For your comfort, do not hesitate to use the dishwasher under the sink.</i></p>
+            </div>
+            <div class="iconTitle avd">
+                <i class="fa-solid fa-trash icon"></i>
+                <p><b>Un local poubelle situé à l'étage A est mis à votre disposition ainsi qu'une bulle à verre en face de l'hôtel.</b> <br><i>A local trash can, located on floor A, is available to you as well as a glass container in front of the hotel.</i></p>
+            </div>
+            <h3 class="h3avd"><u>Nous contacter</u></h3>
+            <div class="iconTitle avd">
+                <i class="fa-solid fa-phone smicon"></i> 
+                <p>02.43.23.30.66</p>
+            </div>
+            <div class="iconTitle avd">
+                <i class="fa-solid fa-envelope smicon"></i> 
+                <p>centrecongres@odalys.fr</p>
+            </div>
+            <div class="iconTitle avd">
+                <i class="fa-solid fa-house smicon"></i> 
+                <p>7 rue Barbier, 72000 Le Mans</p>
+            </div>
+            <div class="iconTitle avd">
+                <i class="fa-solid fa-globe smicon"></i> 
+                <p><a href="www.odalys-vacances.com">www.odalys-vacances.com</a></p>
+            </div>
+        </div>
+        <div class="column col-3">
+            <h1>Bienvenue chez <br>ODALYS CITY <br>Centre Congrès</h1>
+            <div class="circular-image">
+                <img src="images.jpeg" alt="Description de l'image">
+            </div>
+            <p class="txt-3column">Toute l'équipe est ravie de vous accueillir dans notre appart'hôtel, situé dans le centre-ville du Mans.</p>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="column">
+            <h2>Nos services</h2>
+            <div class="iconTitle">
+                <i class="fa-solid fa-mug-saucer icon"></i>
+                <h3>| PETIT DEJEUNER</h3>
+            </div>
+            <li>Adulte 16€</li>
+            <li>Enfant / Children 7.50€ (4 - 12 ans)</li>
+            <p><b>Lundi au Vendredi : 7h - 10h</b> <br> <i>Monday to Friday</i></p>
+            <p><b>Samedi et Dimanche : 8h - 11h</b> <br> <i>On weekend</i></p>
+            <p><b>La salle est à l'étage A - Rez de Jardin </b><br> <i>The room is on floor A - Garden level</i></p>
+            <div class="iconTitle">
+                <h3 class="right">HAMMAM |</h3>
+                <i class="fa-solid fa-spa icon"></i>
+            </div>
+            <p><b>Ouvert de 12h -22h</b> <br> <i>Open from 2pm to 11pm</i></p>
+            <p><b>Sur réservations à la réception pour une séance d'une heure. L'accès est au rez de chaussée.</b> <br> <i>By reservation only at the reception for 1-hour session. Access is on the ground floor.</i></p>
+            <div class="iconTitle">
+                <i class="fa-solid fa-dumbbell icon"></i>
+                <h3>| SALLE DE SPORT</h3>
+            </div>
+            <p><b>Ouvert de 7h -23h</b> <br><i>Open from 7am to 11.30pm</i></p>
+            <p><b>La salle est au rez de chaussée.</b> <br> <i>Access is on the ground floor.</i></p>
+        </div>
+        <div class="column col2p2">
+            <div class="iconTitle">
+                <h3 class="right">ACCES WIFI |</h3>
+                <i class="fa-solid fa-wifi icon"></i>
+            </div>
+            <p><b>Identifiant / Login:</b> ODALYS</p>
+            <p><b>MDP / Password:</b> centrecongres</p>
+            <div class="iconTitle">
+                <i class="fa-solid fa-spray-can-sparkles icon"></i> 
+                <h3>| MENAGE</h3>
+            </div>
+            <p><b>Ménage quotidien disponible à la demande au tarif de 7€.</b> <br> <i>Daily cleaning available on request: extra of €7.00.</i></p>
+            <p><b>Pour un changement de serviettes: supplément de 7€.</b> <br> <i>For a change of towels only: extra of €7.00.</i></p>
+            <div class="iconTitle right">
+                <h3 class="right">LAVERIE |</h3>
+                <i class="fa-solid fa-shirt icon"></i>
+            </div>
+            <p><b>Ouvert 24h/24</b> <br><i>Open 24 hours a day</i></p>
+            <p><b>La laverie est à l'étage A - Rez de jardin</b> <br><i>The laundry is on floor A. Garden level</i></p>
+            <p>Tarif: 
+                <li>4€ Lavage / Washing</li> 
+                <li>2€ Séchage / Drying</li>
+            </p>
+        </div>
+        <div class="column">
+            <h2>Informations</h2>
+            <div class="iconTitle">
+                <h3 class="right">PLAQUES DE CUISSON | HOTPLATE</h3>
+                <i class="fa-solid fa-fire-flame-simple icon"></i>
+            </div>
+            <p><b>Appuyer sur le bouton de droite pour allumer les plaques de cuisson. <br>Maintenir quelques secondes le bouton du cadenas pour les déverrouiller.</b></p>
+            <p><i>Press the right button to turn on the cooking plates. <br>Hold the padlock button for a few seconds to unlock them.</i></p>
+            <div class="iconTitle">
+                <i class="fa-solid fa-vault icon"></i>
+                <h3>COFFRE SECURISE | SAFE</h3>
+            </div>
+            <p><b>Le coffre est disponible dans le grand placard. <br>Tapez 4 ou 6 fois le chiffre 0 pour ouvrir le coffre. Déposer vos effets personnels et refermer le coffre. Composer votre code à 4 ou 6 chiffres et appuyez sur L. Votre code est enregistré.</b></p>
+            <p><i>The safe is available in the closet. <br>Type 4 or 6 times the number 0 to open it. Put down your personal belongings and close it. Dial your 4 or 6 digit code and press L. Your code is registered.</i></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+    
